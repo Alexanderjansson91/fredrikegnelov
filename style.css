@@ -1,0 +1,665 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(235, 199, 144);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    line-height: 1.5;
+    background-color: rgb(255, 255, 255);
+}
+
+.scrolls{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    right: 1.25em; 
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    color: teal;
+
+}
+.scrolls .center{
+    font-size: 0.825rem;
+}
+
+.smooth { 
+    position: relative;
+    width: 100%;
+    height: 100%;
+    scroll-behavior:smooth;
+    
+    overflow-y: scroll;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+
+section { 
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-grow: column wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem; 
+}
+
+section:nth-child(2){
+    width: 100%;
+    background: url(work.jpg) no-repeat center center fixed;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: blanchedalmond;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+section:nth-child(3){
+    width: 100%;
+    height: 100%;
+}
+
+section:nth-child(4){
+    width: 100%;
+    height: 100%;
+}
+
+.section h2{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 10px 21px;
+    color: teal;
+    background-color: thistle;
+    mix-blend-mode: screen;
+    pointer-events: none;
+    user-select: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Boxabout{
+    font-size: 15px;
+    width: 1000px;
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    color: whitesmoke;
+    
+    
+}
+
+
+
+.headline {
+margin-top: -30vh;
+color:white;
+margin-left: auto;
+margin-right: auto;
+width: 300px;
+padding: 3vh;
+float: none;
+position: absolute;
+left: 50%;
+transform: translate(-50%, -50%); 
+font-family: 'Fredoka One';
+}
+
+.headlineAbout{
+    margin-top: -44vh;
+    color:rgb(208, 184, 5);
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    padding: 3vh;
+    float: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-family: 'Fredoka One';
+
+}
+ 
+.nameLabel{
+margin-top: -40vh;
+color:white;
+margin-left: auto;
+margin-right: auto;
+width: 300px;
+padding: 3vh;
+width: 100%;
+float: none;
+position: absolute;
+left: 50%;
+transform: translate(-50%, -50%); 
+font-family: 'Fredoka One';
+font-size: 7vh;
+}
+
+.spottan{ 
+    max-width: 7vh;
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+
+}
+
+.insta{ 
+    max-width: 6vh;
+    position: absolute;
+    right: 110px;
+    bottom: 29px;
+
+}
+
+
+.navbar {
+    width: 100%;
+    background: transparent;
+    position: static;
+    height: 10vh;
+    align-items: center;
+    display: flex;
+    text-transform: uppercase;
+    position:fixed;
+    z-index: 1;
+    
+}
+
+.box {
+    background: rgb(50, 82, 109);
+    height: 25vh;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 50%; /* Full width */
+    padding: 7px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    Margin-left:80px;
+   
+   
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 50%;
+    margin-left:auto; 
+    margin-right:auto; 
+    margin-top:60px;
+    
+  }
+
+  .submitb{
+      margin-left:40px,
+  }
+
+ .iconMedia{
+     color: white;
+     font-size: 4vh;
+     margin-bottom: 10vh;
+     margin-left: auto;
+     margin-right: auto;
+     border-radius: 70%;
+     border-style: solid;
+     width: 8vh;
+     height: 8vh;
+     border-radius: 50%;
+     border-style: solid;
+     text-align: center;
+     padding: 5px;
+ } 
+
+.country{
+    margin-left: 20px;
+}
+.submit{
+    margin-left: 80px;
+    height:200px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.navbar a {
+    text-decoration: none;
+    margin-left: 20px;
+    
+}
+
+.menu {
+    position: absolute;
+    right: 100px;
+    
+}
+
+.menu a {
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+    text-decoration: none;
+    margin-left: 50px;
+    transition: color 0.3s;
+    font-family: "Ubuntu Condensed";
+    font-size: 3vh;
+    
+}
+
+.menu a:hover {
+    color: grey;
+}
+
+.menu .active {
+    border-bottom: 2px solid black;
+}
+
+.navbar span {
+    letter-spacing: 20px;
+    font-size: 6vh;
+    color: black;
+    font-family: 'Walter Turncoat';
+}
+
+.btn {
+    display: none;
+    position: absolute;
+    right: 20px;
+    
+}
+
+.iconMail{
+    color: white;
+    font-size: 6vh;
+    float: right;
+    right: 0;
+
+}
+
+.btn span {
+    display: block;
+    margin: 6px;
+    width: 40px;
+    height: 3px;
+    background: white;
+}
+
+.aboutLabel{
+    text-align: center;
+    margin-top: 7vh;
+}
+.autoTyping{
+    text-align: center;
+    margin-top: 35vh;
+}
+
+
+
+
+@media (max-width: 890px) {
+
+
+
+    .navbar span {
+        letter-spacing: 20px;
+        font-size: 5vh;
+        color: black;
+        font-family: 'Walter Turncoat';
+    }
+
+    .menu {
+        width: 100%;
+        right: 0;
+        top: 60px;
+        background: white;
+        overflow: hidden;
+        
+        max-height: 0;
+        margin-top: 5.3vh;
+        opacity: 0.9;
+        font-family: "Ubuntu Condensed";
+        
+    }
+    .menu a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+        
+        color: white;
+        background-color: black;
+        opacity: 0.5;
+        font-size: large;
+        font-family: 'Fredoka One', ;
+    } 
+    .btn {
+        display: block;
+        cursor: pointer;
+        background: rgb(50, 82, 109);;
+        opacity: 0.7;
+        
+    }
+    .show {
+        max-height: 500px;
+    }
+    .active {
+        border-bottom: none!important;
+        color: black!important;
+    }
+
+    .Boxabout{
+        font-size: 15px;
+        
+        height: 400px;
+        background-color: rgba(0, 0, 0, 0.8);
+        margin: auto;
+        width: 80%;
+        color: whitesmoke;
+        padding: 30px;
+        padding-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+        
+    }
+
+    .spottan{ 
+        max-width: 7vh;
+        position: absolute;
+        right: 10px;
+        bottom: 30px;
+    
+    }
+    
+    .insta{ 
+        max-width: 6vh;
+        position: absolute;
+        right: 60px;
+        bottom: 30px;
+    }
+
+    
+
+}
+
+
+
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+    
+  }
+  
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+  
+  .modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .modal-body {
+    padding: 10px 15px;
+  }
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .popUpMyStory{
+    background-color:rgb(50, 82, 109);
+    color: white;
+    
+    border-style: none;
+    height: 35vh;
+    width: 100%;
+    font-size: 5vh;
+    height: 60%;
+  }
+
+  .popUpMyVision{
+    background-color:rgba(7, 98, 136, 0.838);
+    color: rgb(255, 255, 255);
+    border-style: none;
+    height: 35vh;
+    width: 100%;
+    font-size: 5vh;
+    height: 60%;
+  }
+
+  .kryckanImage{
+    width: 50vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+  .sanderImage{
+    width: 40vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 27vh;
+  }
+
+  .profilImage{
+    width: 20vh;
+    height: 20vh;
+    margin-bottom:70vh;
+    border-radius: 50%;
+    border-style: solid;
+    text-align: center;
+    margin-top: 3vh;
+  }
+
+  .image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .infoText{
+    margin-top: -25vh;
+    color:rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 3vh;
+    float: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-family: 'Fredoka One';
+    }
+
+    .infoContact{
+      margin-top: -40vh;
+      color:rgb(0, 0, 0);
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      padding: 3vh;
+      float: none;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%); 
+      font-family: 'Fredoka One';
+    }
+    .phone{
+        border-style: solid;
+        border-radius: 20px;
+      background-color:rgba(7, 98, 136, 0.838);
+      width: 40%;
+      height: 8vh;
+      color: white;
+      text-align: center;
+      vertical-align: middle;
+      margin: 0;
+      padding: 12px;
+      text-decoration: none;
+      
+   
+    }
+  
+    .email{
+      border-style: solid;
+      border-radius: 20px;
+      background-color: rgb(50, 82, 109);
+      width: 40%;
+      height: 8vh;
+      color: white;
+      text-align: center;
+      margin: 0;
+      padding: 12px;
+      text-decoration: none;
+    }
+
+    .infoCopy {
+      margin-top: -10vh;
+      color:rgb(255, 255, 255);
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      padding: 3vh;
+      float: none;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%); 
+      font-family:sans-serif;
+      font-size: 70%;
+    }
+
+    .LinkdinStart{
+    border-style: solid;
+    border-radius: 20px;
+    background-color:rgba(7, 98, 136, 0.838);
+    width: 20%;
+    height: 8vh;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    padding: 12px;
+    text-decoration: none;
+    }
+
+
+
+
+  
