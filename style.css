@@ -36,9 +36,13 @@ body {
     color: teal;
 
 }
+
+
 .scrolls .center{
     font-size: 0.825rem;
 }
+
+
 
 .smooth { 
     position: relative;
@@ -61,6 +65,8 @@ section {
     align-items: center;
     justify-content: center;
     font-size: 1rem; 
+       
+    overflow-x: hidden; 
 }
 
 section:nth-child(2){
@@ -70,6 +76,7 @@ section:nth-child(2){
     margin: 0;
     padding: 0;
     background-color: blanchedalmond;
+    background-attachment: scroll;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -116,7 +123,7 @@ section:nth-child(4){
 
 
 .headline {
-margin-top: -30vh;
+margin-top: -22vh;
 color:white;
 margin-left: auto;
 margin-right: auto;
@@ -126,7 +133,7 @@ float: none;
 position: absolute;
 left: 50%;
 transform: translate(-50%, -50%); 
-font-family: 'Fredoka One';
+font-family: 'Rubik', sans-serif;
 }
 
 .headlineAbout{
@@ -140,7 +147,9 @@ font-family: 'Fredoka One';
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%); 
-    font-family: 'Fredoka One';
+    font-family: 'Hind', sans-serif;
+    font-size:5vh;
+    
 
 }
  
@@ -156,7 +165,7 @@ float: none;
 position: absolute;
 left: 50%;
 transform: translate(-50%, -50%); 
-font-family: 'Fredoka One';
+font-family: 'Hind', sans-serif;;
 font-size: 7vh;
 }
 
@@ -300,19 +309,18 @@ input[type=text], select, textarea {
 .menu {
     position: absolute;
     right: 100px;
-    
 }
 
 .menu a {
-    color: rgb(255, 255, 255);
+    color: rgb(170, 211, 244);
     opacity: 0.7;
     text-decoration: none;
     margin-left: 50px;
     transition: color 0.3s;
     font-family: "Ubuntu Condensed";
-    font-size: 3vh;
-    
+    font-size: 3vh; 
 }
+
 
 .menu a:hover {
     color: grey;
@@ -355,6 +363,8 @@ input[type=text], select, textarea {
 .aboutLabel{
     text-align: center;
     margin-top: 7vh;
+    
+
 }
 .autoTyping{
     text-align: center;
@@ -376,30 +386,38 @@ input[type=text], select, textarea {
     }
 
     .menu {
-        width: 100%;
-        right: 0;
-        top: 60px;
-        background: white;
+        width: 120%;
+        margin-right: auto;
+        margin-left: auto;
+        right:0;
+        top: 5VH;
+        bottom: 5vh;
+       text-align: center;
         overflow: hidden;
-        
+        background-color: rgb(0, 0, 0);
         max-height: 0;
         margin-top: 5.3vh;
-        opacity: 0.9;
+        opacity: 0.8;
         font-family: "Ubuntu Condensed";
+        height: 100vh;
+      }
+     
         
-    }
+  
     .menu a {
         display: block;
-        width: 100%;
-        text-align: center;
-        margin: 0;
+        width: 30%;
+        margin:8vh;
+        margin-left: 40%;
+        margin-right:35%;
         padding: 10px;
-        
+        text-align: center;
         color: white;
         background-color: black;
-        opacity: 0.5;
+        
+        opacity: 0.8;
         font-size: large;
-        font-family: 'Fredoka One', ;
+        font-family: 'Hind', sans-serif;
     } 
     .btn {
         display: block;
@@ -447,6 +465,8 @@ input[type=text], select, textarea {
         bottom: 30px;
     }
 
+
+
     
 
 }
@@ -461,15 +481,17 @@ input[type=text], select, textarea {
     position: fixed;
     top: 50%;
     left: 50%;
+    
     transform: translate(-50%, -50%) scale(0);
     transition: 200ms ease-in-out;
     border: 1px solid black;
+    border-style: none;
     border-radius: 10px;
     z-index: 10;
     background-color: white;
     width: 500px;
     max-width: 80%;
-    
+    color: black
   }
   
   .modal.active {
@@ -481,12 +503,13 @@ input[type=text], select, textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid black;
+    
   }
   
   .modal-header .title {
     font-size: 1.25rem;
     font-weight: bold;
+    color: rgb(208, 184, 5);
   }
   
   .modal-header .close-button {
@@ -496,7 +519,7 @@ input[type=text], select, textarea {
     background: none;
     font-size: 1.25rem;
     font-weight: bold;
-    color: black;
+    color:rgb(50, 82, 109);
   }
   
   .modal-body {
@@ -526,8 +549,8 @@ input[type=text], select, textarea {
     
     border-style: none;
     height: 35vh;
-    width: 100%;
-    font-size: 5vh;
+    width: 50%;
+    font-size: 3vh;
     height: 60%;
   }
 
@@ -536,13 +559,13 @@ input[type=text], select, textarea {
     color: rgb(255, 255, 255);
     border-style: none;
     height: 35vh;
-    width: 100%;
-    font-size: 5vh;
+    width: 50%;
+    font-size: 3vh;
     height: 60%;
   }
 
   .kryckanImage{
-    width: 50vh;
+    width: 35vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -550,7 +573,7 @@ input[type=text], select, textarea {
   }
 
   .sanderImage{
-    width: 40vh;
+    width: 35vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -558,34 +581,33 @@ input[type=text], select, textarea {
   }
 
   .profilImage{
-    width: 20vh;
-    height: 20vh;
-    margin-bottom:70vh;
-    border-radius: 50%;
-    border-style: solid;
-    text-align: center;
-    margin-top: 3vh;
-  }
-
-  .image{
-    display: block;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-  }
-
-  .infoText{
-    margin-top: -25vh;
-    color:rgb(0, 0, 0);
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+    width: 25vh;
+    height:25vh;
     padding: 3vh;
     float: none;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%); 
-    font-family: 'Fredoka One';
+    font-family: 'Hind', sans-serif;
+    border-radius: 50%;
+    border-style: solid;
+    margin-top:-37vh;
+
+  }
+  .infoText{
+    margin-top: -25vh;
+    color:rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding: 3vh;
+    float: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    
     }
 
     .infoContact{
@@ -599,7 +621,7 @@ input[type=text], select, textarea {
       position: absolute;
       left: 50%;
       transform: translate(-50%, -50%); 
-      font-family: 'Fredoka One';
+      
     }
     .phone{
         border-style: solid;
@@ -611,12 +633,10 @@ input[type=text], select, textarea {
       text-align: center;
       vertical-align: middle;
       margin: 0;
-      padding: 12px;
+      padding: 10px;
       text-decoration: none;
-      
-   
+      font-size: 3vh;
     }
-  
     .email{
       border-style: solid;
       border-radius: 20px;
@@ -626,8 +646,9 @@ input[type=text], select, textarea {
       color: white;
       text-align: center;
       margin: 0;
-      padding: 12px;
+      padding: 10px;
       text-decoration: none;
+      font-size: 3vh;
     }
 
     .infoCopy {
@@ -648,18 +669,101 @@ input[type=text], select, textarea {
     .LinkdinStart{
     border-style: solid;
     border-radius: 20px;
+    border: none;
     background-color:rgba(7, 98, 136, 0.838);
-    width: 20%;
-    height: 8vh;
+    width: 20vh;
+    height: 50px;
     color: white;
     text-align: center;
     vertical-align: middle;
     margin: 0;
+    margin-top:16vh;
     padding: 12px;
     text-decoration: none;
+    
     }
 
+    .knowledgeBoxAdobe{
 
-
-
+      background-color:rgba(7, 98, 136, 0.838);
+      width: 50%;
+      height: 21vh;
+      color: white;
+      margin: 0;
+      padding: 12px;
+      text-decoration: none;
+      margin-top: 44vh;
   
+      }
+     
+      .knowledgeBoxCad{
+     
+        background-color: rgb(50, 82, 109);
+        width: 50%;
+        height: 21vh;
+        color: white;
+        margin: 0;
+        padding: 12px;
+        text-decoration: none;
+        margin-top: 44vh;
+  
+      }
+  
+      .adobe{
+        margin-top: -1vh;
+        text-align: center;
+        font-family: 'Fredoka One';
+        font-size: 3vh;
+        text-decoration: rgb(208, 184, 5);
+      }
+  
+      ul.a {
+        list-style-type: circle;
+        text-align: left;
+        margin-top:-3vh;
+        text-align: middle;
+      }
+      @media (max-width: 600px) {
+        .box {
+          background: rgb(50, 82, 109);
+          height: 25vh;
+          align-items: center;
+          display: flex;
+          position: absolute;
+          bottom: -20vh;
+          width: 100%;
+         }
+
+
+      }
+      @media (max-width: 800px) {
+      
+        .nameLabel{
+          margin-top: -40vh;
+          color:white;
+          margin-left: auto;
+          margin-right: auto;
+          width: 300px;
+          padding: 3vh;
+          width: 100%;
+          float: none;
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%, -50%); 
+          font-family: 'Hind', sans-serif;
+          font-size: 5vh;
+          }
+      
+        .box {
+          background: rgb(50, 82, 109);
+          height: 25vh;
+          align-items: center;
+          display: flex;
+          position: absolute;
+          bottom: 12vh;
+          width: 100%;
+         }
+         section {
+          background-attachment:initial;
+        }
+      }
